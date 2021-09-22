@@ -122,11 +122,12 @@ header{
 
 main .container{
     background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
-    
+    background-size: 100% 500px;
 }
 
 .container .article{
     width: 100%;
+    margin-bottom: 150px;
 }
 
 .container .article img{
@@ -138,8 +139,15 @@ main .container{
     float: left;
     width: 40%;
     margin-top: 35px;
-    text-align: left;
+    text-align: left;    
+}
+
+.text.right{
     padding-left: 10%;
+}
+
+.text.left{
+    padding-right: 10%;
 }
 
 .text h2{
@@ -151,3 +159,16 @@ main .container{
     margin-top: 30px;
 }
     
+/*  last article */
+
+.article.last > *{
+    float: none;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.article.last img{
+    width: 100%;
+}
+
