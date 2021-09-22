@@ -30,6 +30,11 @@ body{
     color: white;
 }
 
+.btn.blue{
+    background-color: rgb(156, 164, 238);
+    color: white;
+}
+
 .btn:hover{
     color: cornflowerblue;
 }
@@ -85,7 +90,7 @@ header{
 }
 
 /* access */
-#access{
+#access, #register{
     float: right;
 }
 
@@ -120,32 +125,23 @@ header{
 
 /* MAIN */
 
-/* main .container{
-    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
-    background-repeat:space;
-    background-size: 100% 200px;
-} */
-
+/* container */
 .container .article{
     width: 100%;
     margin-bottom: 150px;
 }
 
-.background.top{
-    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
-    background-repeat:space;
+.background{
+    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");    
     background-size: contain;
     height: 150px;
     width: 100%;
+}
+.background.top{   
     margin-top: -150px;
 }
 
-.background.bottom{
-    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
-    background-repeat:space;
-    background-size: contain;
-    height: 150px;
-    width: 100%;    
+.background.bottom{   
     float: left;
     transform: rotate(180deg);
 }
@@ -184,13 +180,15 @@ header{
 }
     
 /*  last article */
+.article.last{
+    margin-bottom: 0;
+}
 
 .article.last .text{
     float: none;
     width: 80%;
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .article.last img{
@@ -198,3 +196,93 @@ header{
     float: none;
 }
 
+.article.last a{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* summary */
+
+section.summary{
+    background-color: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.summary .banner{
+    height: 50px;
+    width: 40%;
+    background-image: url(../img/stars.svg);
+    margin: auto; 
+    margin-bottom: 60px;
+}
+
+.banner h3{
+    vertical-align: bottom;
+    line-height: 100px;
+}
+
+.summary .btn{
+    width: 100%;
+}
+
+/* footer */
+
+footer{
+    background-color: black;
+    margin
+}
+
+footer .container{
+    padding-top: 120px;
+}
+
+section.links{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid rgb(156, 164, 238);
+}
+
+.links > *{
+    float: left;
+}
+
+#social{
+    width: 20%;
+}
+
+#social h3{
+    color: rgb(156, 164, 238);
+    font-size: 30px;
+}
+
+#social p, #social ul {
+    color: white;
+    margin-top: 20px;
+}
+
+#social ul{
+    list-style: none;
+}
+
+#social > ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links ul{
+    color: white;
+    list-style: none;
+    display: block;
+    margin-left: 150px;
+    line-height: 30px;
+}
+
+.links > ul li:first-of-type{
+    color: rgb(156, 164, 238);
+}
+
+/* sign-in */
+section.sign-in{
+    padding-bottom: 50px;
+}
