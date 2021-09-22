@@ -120,14 +120,38 @@ header{
 
 /* MAIN */
 
-main .container{
+/* main .container{
     background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
-    background-size: 100% 500px;
-}
+    background-repeat:space;
+    background-size: 100% 200px;
+} */
 
 .container .article{
     width: 100%;
     margin-bottom: 150px;
+}
+
+.background.top{
+    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
+    background-repeat:space;
+    background-size: contain;
+    height: 150px;
+    width: 100%;
+    margin-top: -150px;
+}
+
+.background.bottom{
+    background:linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,.95)), url("../img/wave.svg");
+    background-repeat:space;
+    background-size: contain;
+    height: 150px;
+    width: 100%;    
+    float: left;
+    transform: rotate(180deg);
+}
+
+.article.left, .article.last{
+    background-color: rgba(0, 0, 0, 0.05) ;
 }
 
 .container .article img{
@@ -142,11 +166,11 @@ main .container{
     text-align: left;    
 }
 
-.text.right{
+.article.right .text{
     padding-left: 10%;
 }
 
-.text.left{
+.article.left .text{
     padding-right: 10%;
 }
 
@@ -161,14 +185,16 @@ main .container{
     
 /*  last article */
 
-.article.last > *{
+.article.last .text{
     float: none;
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    
 }
 
 .article.last img{
     width: 100%;
+    float: none;
 }
 
