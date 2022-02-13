@@ -89,6 +89,10 @@ header{
     font-size: 16px;
 }
 
+.main-nav ul li a:hover{
+    text-decoration: underline;
+}
+
 /* access */
 #access, #register{
     float: right;
